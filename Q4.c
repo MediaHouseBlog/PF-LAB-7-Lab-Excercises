@@ -8,12 +8,13 @@ int main(){
 		scanf("%d",&numbers[i]);
 	}
 	int temp;
-	for(i = 0 ; i < 6 ; i++){
+	for(i = 6 ; i > 0 ; i--){
 		temp = numbers[i];
-		numbers[i] = numbers[i + 1];
-		numbers[i+1] = temp;
+		numbers[i] = numbers[i - 1];
+		numbers[i - 1] = temp;
 	}
 	for(i = 0 ; i < 6 ; i++){
 		printf("%d \n",numbers[i]);
 	}
 }
+
